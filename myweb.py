@@ -13,13 +13,13 @@ def hello():
 def form():
     return render_template('form.html')
 
-#@app.route("/formproc")    
-#def formproc():
-#    # print(requset.args)
-#    mylengh = request.args['mylengh']
-#    myweght = request.args['myweght']
-#    avweght = request.args['avweght = (leght - 100)*0.85']
-#    return render_template('formfroc.html', myleght = mylengh, myweght = myweght, avweght = avweght)
+@app.route("/formproc")    
+def formproc():
+    print(request.args)
+    mylengh = request.args['mylengh']
+    myweght = request.args['myweght']
+    avweght = request.args['avweght = (leght - 100)*0.85']
+    return render_template('formfroc.html', myleght = mylengh, myweght = myweght, avweght = avweght)
     
     
 #@app.route("/img")
