@@ -9,8 +9,6 @@ if __name__ == '__main__':
 def hello():
     return render_template('hello.html')
 
-
-
 #@app.route("/form")
 #def form():
 #    return render_template('form.html')
